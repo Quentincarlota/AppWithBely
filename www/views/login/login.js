@@ -63,7 +63,7 @@ angular.module('App').controller('loginController', function($scope, $state, $lo
                 var account = response.val();
                 $localStorage.account = account;
               });
-              $state.go('home');
+              $state.go('app.home');
             });
           }
         });

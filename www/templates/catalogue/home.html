@@ -1,0 +1,63 @@
+<ion-view view-title="Catalogue d'expo" hide-back-button="false" hide-nav-bar="false">
+    <ion-content padding="true">
+
+        <!--<h3 class="line-height-160">We're so glad to have you with us! <b>{{email}}</b>.</h3>
+        <h3 class="line-height-160">You are logged in through <b>{{provider}}</b>.</h3>-->
+
+        <div class="filtres" align="center">
+            <button class="button button-small button-negative">painting</button>
+            <button class="button button-small button-negative">mode</button>
+            <button class="button button-small button-negative">archi</button>
+            <button class="button button-small button-negative">photo</button>
+            <button class="button button-small button-negative">sciences</button>
+            <button class="button button-small button-negative">sculpture</button>
+            <button class="button button-small button-negative">préf</button>
+        </div>
+        <br>
+        <div class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" ng-model="eq_search.q" placeholder="Artistes, Thèmes...">
+        </div>
+
+        <div class="card">
+            <div class="item item-body">
+                <img src="../../img/evaandadele.jpg" class="full-image">
+            </div>
+
+            <div class="item item-text-wrap">
+                <strong>Eva et Adele</strong>
+                <br>
+                <p>You are my biggest inspiration</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="item item-body">
+                <img src="../../img/lechat.jpg" class="full-image">
+            </div>
+
+            <div class="item item-text-wrap">
+                <strong>L'art et Le Chat</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="item item-body" ui-sref="app.details">
+                <img src="../../img/OscarWilde.jpg" class="full-image">
+            </div>
+
+            <div class="item item-text-wrap" ui-sref="app.details">
+                <strong>Oscar Wilde</strong>
+                <br>
+                <p>L'impértinent absolu</p>
+            </div>
+        </div>
+
+
+    </ion-content>
+    <!--
+    <div class="bar bar-footer bar-positive" ng-click="logout()">
+      <h1 class="title">Logout</h1>
+    </div>
+    -->
+</ion-view>

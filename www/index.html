@@ -31,17 +31,16 @@
   <!-- Forgot -->
   <script src="views/forgotPassword/forgotPassword.js"></script>
   <!-- Home -->
-  <script src="views/home/home.js"></script>
+  <script src="templates/catalogue/home.js"></script>
   <!-- ngStorage -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
 </head>
 
 <body ng-app="App">
-  <ion-nav-bar class="bar-stable">
-    <ion-nav-back-button>
-    </ion-nav-back-button>
-  </ion-nav-bar>
-  <ion-nav-view></ion-nav-view>
+
+<ion-nav-view name="mainView"></ion-nav-view>
+<ion-nav-view name="startView"></ion-nav-view>
+
 </body>
 
 </html>
